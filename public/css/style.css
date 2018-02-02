@@ -42,6 +42,7 @@ footer form input {
   padding-left: 5px;
   text-transform: lowercase;
   font-weight: normal;
+  cursor: pointer;
 }
 
 input:focus {
