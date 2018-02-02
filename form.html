@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="public/css/style.css">
+  </head>
+  <body>
+    <form id="postJob" action="#">
+      <div>
+        <label for="title">Job title</label><br>
+        <input type="text" id="title" name="job_title" placeholder="e.g Creative Frontend Developer">
+      </div>
+      <div>
+        <label for="title">Provider</label><br>
+        <input type="text" id="provider" name="job_provider" placeholder="e.g HAUS">
+      </div>
+      <div>
+        <label for="title">Description (you can use markdown)</label><br>
+        <input type="text" id="description" name="job_description" placeholder="e.g Frontend Developers are an essential part of HAUS. Your role starts with providing technical insight to the design team and influencing the creative process. You’ll be a part of guiding the design direction by rapidly developing prototypes of ideas based upon internal creative meetings. Once in development, you’ll use our React/Redux boilerplate to architect an application that follows our best practices and ensures that other developers will be able to work on the project as needed.">
+      </div>
+      <div>
+        <label for="title">Tags (ex. video maker, editor)</label><br>
+        <div id="tagsInput">
+          <!-- <span class="tag">
+            <span>react</span>
+            <span class="x">x</span>
+          </span> -->
+          <input maxlength="20" placeholder="e.g React, Angular" id="tags" name="job_tags">
+        </div>
+      </div>
+      <div>
+        <label for="title">URL to apply</label><br>
+        <input type="text" id="aUrl" name="job_aUrl" placeholder="e.g http://haus.com/jobs/creative-frontend-developer">
+      </div>
+      <div>
+        <label for="title">Email to apply</label><br>
+        <input type="text" id="email" name="job_email" placeholder="e.g careers@haus.com">
+      </div>
+      <div>
+        <label for="title">How can people apply for this job?</label><br>
+        <input type="text" id="apply" name="job_apply" placeholder="e.g You can apply by clicking the link to our job application.">
+      </div>
+      <div>
+        <label for="title">Company homepage URL</label><br>
+        <input type="text" id="hurl" name="job_hUrl" placeholder="e.g https://haus.com">
+      </div>
+      <div class="button">
+        <button type="submit">
+          Next
+        </button>
+      </div>
+    </form>
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: 'AIzaSyB6N3XU4BCScr6ZKaxiFQEK6q4fSwQJCis',
+        authDomain: 'jobs-55fb6.firebaseapp.com',
+        databaseURL: 'https://jobs-55fb6.firebaseio.com',
+        projectId: 'jobs-55fb6',
+        storageBucket: 'jobs-55fb6.appspot.com',
+        messagingSenderId: '94832260095',
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <script src="public/js/script.js"></script>
+  </body>
+</html>

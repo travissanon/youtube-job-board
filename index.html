@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Yaas</title>
+    <link rel="stylesheet" href="public/css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Job Baord</h1>
+      <button>
+        <a href="form.html">Post a job</a>
+      </button>
+    </header>
+
+    <div id="jobs">
+      <!-- <div class="job_id">
+        <div class="main-info">
+          <h2>Video Editor</h2>
+          <h3>Sarah Deitchy</h3>
+          </div>
+          <ul>
+            <li>Video Editing</li>
+            <li>Cameras</li>
+          </ul>
+          <p>2h</p>
+          <button type="button" name="apply">Apply</button>
+          <div class="more-info">
+            <div class="text">
+              <p>InVision is the world's leading product design platform, powering the future of digital product design through our deep understanding of the dynamics of collaboration. We provide three million people with the power to prototype, review, refine, manage and user test web and mobile products. InVision drives the product design process at leading Fortune 100 companies, including at Disney, IBM, Walmart, Apple, Verizon and General Motors. Backed by Accel, ICONIQ Capital, FirstMark Capital, Tiger Global and others. InVision is a distributed team with over 200 employees around the world.</p>
+              <p>You are someone who loves building software that people genuinely love using.  You want to make things that excite people. That add joy to their daily lives.  And you want to do it with people who are working towards a common goal and see your success as their success.  You will be joining a team that values getting things done, helping others get things done, and building towards an amazing future.</p>
+              <p>Our customers are Designers and Engineers who care about the details; the small stuff.  Every bit of the customer experience is important and we’re not just talking about features.  Every bit of friction is something that gets in the way of creativity and innovation.  Our job is to foster both of those things.</p>
+              <p>You like to go really deep because you love to unravel things, both to understand how they work and to use them beyond what others thought was possible.  You love both new and interesting things but also things that are proven to work because you’ve been burned by the new and shiny before.  You aren’t afraid to tackle any problem head on with the support of talented people to help.  You enable people to do their best and achieve things together they never thought possible.  Because you care.  Because you genuinely want to deliver something that people love.</p>
+            </div>
+            <div class="social">
+              <button name="tweet"><i class="fab fa-twitter"></i>Tweet this job</button>
+              <button name="share"><i class="fab fa-facebook-f"></i>Share this job</button>
+            </div>
+        </div> -->
+    </div>
+    <footer>
+      <form class="news" action="#">
+        <div>
+          <label for="newsletter">I want a</label>
+          <select>
+            <option value="daily">daily</option>
+            <option value="weekly">weekly</option>
+            <option value="monthly">monthly</option>
+          </select>
+          <label for="newsletter">email of all new creator jobs</label>
+          <input type="text" placeholder="Name" name="name">
+          <input type="text" placeholder="Email" name="email">
+          <button type="submit">Enter</button>
+        </div>
+      </form>
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: 'AIzaSyB6N3XU4BCScr6ZKaxiFQEK6q4fSwQJCis',
+        authDomain: 'jobs-55fb6.firebaseapp.com',
+        databaseURL: 'https://jobs-55fb6.firebaseio.com',
+        projectId: 'jobs-55fb6',
+        storageBucket: 'jobs-55fb6.appspot.com',
+        messagingSenderId: '94832260095',
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <script src="public/js/script.js"></script>
+  </body>
+</html>
