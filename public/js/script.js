@@ -101,7 +101,6 @@ function gotData(data) {
     button.appendChild(apply);
     job.appendChild(button);
 
-    //console.log(job);
     currentJobs.appendChild(job);
   }
 };
@@ -113,6 +112,7 @@ function errData(err) {
 
 let tagsInput = document.getElementById('tagsInput');
 let tags = document.getElementById('tags');
+var remove;
 
 tags.addEventListener('keyup', function (e) {
   e.preventDefault();
@@ -124,7 +124,16 @@ tags.addEventListener('keyup', function (e) {
     tagSkills.push(this.value);
     console.log(tagSkills);
     this.value = '';
+    remove = document.querySelectorAll('.x');
   };
+
+  remove.forEach((x) => {
+    x.addEventListener('click', () => {
+      x.parentNode.parentNode.removeChild(x.parentNode);
+      tagSkills.splice(tagSkills.indexOf(x.parentNode.firstChild.innerHTML));
+      console.log(tagSkills);
+    });
+  });
 });
 
 // let exJob = document.querySelector('.job_id');
