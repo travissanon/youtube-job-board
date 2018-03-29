@@ -4,11 +4,29 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --recursive ./test/*.test.js",
+    "start": "webpack",
+    "start:dev": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "express": "^4.16.2"
-  }
+    "express": "^4.16.2",
+    "mocha": "^5.0.5",
+    "nodemailer": "^4.6.3",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "jsdom-quokka-plugin": "^1.0.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevMaterial/youtube-job-board.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DevMaterial/youtube-job-board/issues"
+  },
+  "homepage": "https://github.com/DevMaterial/youtube-job-board#readme"
 }

@@ -2,19 +2,33 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Yaas</title>
-    <link rel="stylesheet" href="public/css/style.css">
-  </head>
-  <body>
-    <header>
-      <h1>Job Baord</h1>
-      <button>
-        <a href="form.html">Post a job</a>
-      </button>
-    </header>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
 
+    <link rel="stylesheet" href="./public/css/style.css">
+  </head>
+  <body id="index">
+  <!-- <div id="confirm-banner">
+    <h3>Thanks for submitting. 👌</h3>
+  </div> -->
+    <header>
+      <a href="https://twitter.com/DevMaterial?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @DevMaterial</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <h1>YOBA</h1>
+      <!--
+      <h2>
+        <span>Jobs</span>
+        for
+        <span>creative</span>
+        people
+      </h2> -->
+    </header>
+    <div class="post-job">
+      <h3>👉 Have a job? post it</h3>
+      <a href="form.html"><button type="button">here</button></a>
+    </div>
     <div id="jobs">
-      <!-- <div class="job_id">
+      <div class="job_id">
+        <div class="dropdown"><i class="fas fa-angle-double-down"></i></div>
         <div class="main-info">
           <h2>Video Editor</h2>
           <h3>Sarah Deitchy</h3>
@@ -23,7 +37,7 @@
             <li>Video Editing</li>
             <li>Cameras</li>
           </ul>
-          <p>2h</p>
+          <p>Just now</p>
           <button type="button" name="apply">Apply</button>
           <div class="more-info">
             <div class="text">
@@ -36,11 +50,13 @@
               <button name="tweet"><i class="fab fa-twitter"></i>Tweet this job</button>
               <button name="share"><i class="fab fa-facebook-f"></i>Share this job</button>
             </div>
-        </div> -->
+          </div>
+        </div>
+      </div>
     </div>
     <footer>
       <form class="news" action="#">
-        <div>
+        <div class="newsletter">
           <label for="newsletter">I want a</label>
           <select>
             <option value="daily">daily</option>
@@ -55,6 +71,8 @@
       </form>
     </footer>
     <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js"></script>
     <script>
       // Initialize Firebase
       var config = {
@@ -66,8 +84,8 @@
         messagingSenderId: '94832260095',
       };
       firebase.initializeApp(config);
-    </script>
+    // </script>
+    <script src="./dist/output.js" type="text/javascript"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
-    <script src="public/js/script.js"></script>
   </body>
 </html>

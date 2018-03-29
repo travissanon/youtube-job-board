@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Form</title>
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="./public/css/style.css">
   </head>
   <body>
     <form id="postJob" action="#">
@@ -12,12 +12,12 @@
         <input type="text" id="title" name="job_title" placeholder="e.g Creative Frontend Developer">
       </div>
       <div>
-        <label for="title">Provider</label><br>
-        <input type="text" id="provider" name="job_provider" placeholder="e.g HAUS">
+        <label for="title">Channel</label><br>
+        <input type="text" id="channel" name="job_channel" placeholder="e.g HAUS">
       </div>
       <div>
         <label for="title">Description (you can use markdown)</label><br>
-        <input type="text" id="description" name="job_description" placeholder="e.g Frontend Developers are an essential part of HAUS. Your role starts with providing technical insight to the design team and influencing the creative process. You’ll be a part of guiding the design direction by rapidly developing prototypes of ideas based upon internal creative meetings. Once in development, you’ll use our React/Redux boilerplate to architect an application that follows our best practices and ensures that other developers will be able to work on the project as needed.">
+        <textarea type="text" id="description" name="job_description" placeholder="e.g Frontend Developers are an essential part of HAUS. Your role starts with providing technical insight to the design team and influencing the creative process. You’ll be a part of guiding the design direction by rapidly developing prototypes of ideas based upon internal creative meetings. Once in development, you’ll use our React/Redux boilerplate to architect an application that follows our best practices and ensures that other developers will be able to work on the project as needed."></textarea>
       </div>
       <div>
         <label for="title">Tags (ex. video maker, editor)</label><br>
@@ -65,6 +65,6 @@
       firebase.initializeApp(config);
     </script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
-    <script src="public/js/script.js"></script>
+    <script src="./dist/output.js" type="text/javascript"></script>
   </body>
 </html>
